@@ -1,9 +1,7 @@
 
 def pick_engineer()
 	engineers = Array.new()
-	File.readlines("Engineer.txt").each do |line| 
-		engineers.push(line)
-	end
+	engineers = File.readlines("Engineer.txt") 
 	puts engineers[rand(engineers.count)]	
 end
 
